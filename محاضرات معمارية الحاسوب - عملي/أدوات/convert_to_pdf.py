@@ -6,7 +6,7 @@ import re
 
 from fpdf import FPDF
 
-BASE = "/home/tareq/cs/courses/ معمارية حاسوب/محاضرات معمارية الحاسوب - عملي"
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONT_DIR = "/usr/share/fonts/truetype"
 OUT_DIR = os.path.join(BASE, "PDF")
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -305,13 +305,20 @@ def write_pdf(md_path, pdf_path):
 
 def main():
     files = []
-    for n in range(1, 11):
-        sub = os.path.join(BASE, str(n))
-        for name in (f"\u062E\u0637\u0629 \u0627\u0644\u0645\u062D\u0627\u0636\u0631\u0629 {n}.md",
-                     f"\u062A\u062D\u0644\u064A\u0644 \u0627\u0644\u0645\u062D\u0627\u0636\u0631\u0629 {n}.md"):
-            p = os.path.join(sub, name)
-            if os.path.exists(p):
-                files.append(p)
+    lectures_dir = os.path.join(BASE, "\u0627\u0644\u0645\u062D\u0627\u0636\u0631\u0627\u062A")
+    if not os.path.isdir(lectures_dir):
+        print(f"Error: Lectures directory not found: {lectures_dir}")
+        return
+    for entry in sorted(os.listdir(lectures_dir)):
+        sub = os.path.join(lectures_dir, entry)
+        if not os.path.isdir(sub):
+            continue
+        for n in range(1, 11):
+            for name in (f"\u062E\u0637\u0629 \u0627\u0644\u0645\u062D\u0627\u0636\u0631\u0629 {n}.md",
+                         f"\u062A\u062D\u0644\u064A\u0644 \u0627\u0644\u0645\u062D\u0627\u0636\u0631\u0629 {n}.md"):
+                p = os.path.join(sub, name)
+                if os.path.exists(p):
+                    files.append(p)
 
     created = []
     for md in sorted(files):

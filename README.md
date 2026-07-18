@@ -9,7 +9,7 @@
   [![License](https://img.shields.io/badge/license-Educational-blue)](#)
   [![Students](https://img.shields.io/badge/for-Students-success)](#)
   [![MIPS](https://img.shields.io/badge/architecture-MIPS-brightgreen)](#)
-  [![MARS](https://img.shields.io/badge/simulator-MARS_4.5-orange)](#)
+  [![MARS](https://img.shields.io/badge/simulator-MARS_4.3-orange)](#)
   [![Language](https://img.shields.io/badge/language-Arabic_%7C_English-lightgrey)](#)
 
   <hr style="border: 2px solid #15803D; width: 80%;">
@@ -56,10 +56,10 @@
     margin: 4px 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s;
-  " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  ">
     📄 اقرأ دليل MARS
   </a>
-  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D9%85%D9%84%D8%AD%D9%82%D8%A7%D8%AA/%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9/CA-Tools.rar" style="
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="
     display: inline-block;
     background: #C79100;
     color: #FFFFFF;
@@ -71,12 +71,12 @@
     margin: 4px 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s;
-  " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  ">
     ⬇ تحميل حزمة البيئة
   </a>
   <br><br>
   <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="color: #C79100; font-size: 14px; text-decoration: underline; text-underline-offset: 3px;">
-    ⚡ حمل <strong>CA-Tools.rar</strong> واتبع التعليمات line by line
+    ⚡ حمل <strong>CA-Tools.rar</strong> واتبع التعليمات
   </a>
 </div>
 
@@ -101,6 +101,7 @@
 
 ## 📋 جدول المحتويات
 
+- [للطلاب](#للطلاب)
 - [عن المقرر](#عن-المقرر)
 - [المحاضرات](#المحاضرات)
 - [هيكل المشروع](#هيكل-المشروع)
@@ -112,6 +113,7 @@
 
 ---
 
+<a id="للطلاب"></a>
 ## 🎓 للطلاب — كيفية الوصول إلى المحتوى
 
 <div dir="rtl">
@@ -205,12 +207,10 @@ Computer-Architecture-Lab/
     ├── المحاضرات/                           # 10 محاضرات دراسية
     │   ├── 01-مقدمة-إلى-MARS-وMIPS/
     │   │   ├── 📄 خطة المحاضرة 1.md          # خطة تدريسية مفصلة
-    │   │   ├── 📄 خطة المحاضرة 1.pdf
     │   │   ├── 📄 تحليل المحاضرة 1.md        # تحليل المحتوى التعليمي
-    │   │   ├── 📄 تحليل المحاضرة 1.pdf
     │   │   ├── 📄 ورقة عمل المحاضرة 1.md     # تمارين وأنشطة
     │   │   ├── 💻 lecture_01.asm             # أمثلة عملية MIPS
-    │   │   └── 📊 *.pptx                     # عروض تقديمية
+    │   │   └── 💻 mips001.asm                # مثال تفاعلي من دليل MARS
     │   │
     │   ├── 02-العمليات-الحسابية-الأساسية/
     │   ├── 03-العمليات-المنطقية-وإزاحة-البتات/
@@ -225,19 +225,19 @@ Computer-Architecture-Lab/
     └── أدوات/                               # أدوات مساعدة
         ├── convert_to_pdf.py                # سكربت تحويل MD → PDF
         ├── style.css                        # هوية جامعة إب البصرية
-        ├── [📦 CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)  # حزمة البيئة (MARS + Java JRE + Logisim)
-        └── 📖 دليل MIPS الشامل.md            # شرح جميع أوامر MIPS
+        ├── 📦 CA-Tools.rar                  # حزمة البيئة (MARS + Java JRE + Logisim)
+        ├── 📘 شرح العمل على برنامج mars.pdf # دليل MARS المصور
+        └── 📖 دليل MIPS الشامل - شرح كل رمز.md # شرح جميع أوامر MIPS
 ```
 
 ### مكونات كل محاضرة
 
 | المكون | الوصف | الصيغة |
 |:---:|---|---|
-| **📄 الخطة** | أهداف، مدة زمنية، أنشطة، تقييم | `.md` + `.pdf` |
-| **📄 التحليل** | تحليل المحتوى والجمهور المستهدف | `.md` + `.pdf` |
+| **📄 الخطة** | أهداف، مدة زمنية، أنشطة، تقييم | `.md` |
+| **📄 التحليل** | تحليل المحتوى والجمهور المستهدف | `.md` |
 | **📄 ورقة عمل** | أسئلة نظرية، تمارين عملية، تحديات | `.md` |
-| **💻 كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` (مثل `mips001.asm`) |
-| **📊 العرض** | شرائح عرض تقديمية (متوفرة للمحاضرة 1) | `.pptx` |
+| **💻 كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` |
 | **📦 الحزمة** | حزمة البيئة (MARS + Java JRE + Logisim) | [CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar) |
 | **📘 دليل MARS** | دليل مصور لشرح العمل على MARS | [PDF](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf) |
 
@@ -250,7 +250,7 @@ Computer-Architecture-Lab/
 | المتطلب | الوصف |
 |:---|---|
 | **Java Runtime** | الإصدار 8 أو أحدث |
-| **MARS Simulator** | الإصدار 4.5 (أو الأحدث) |
+| **MARS Simulator** | الإصدار 4.3 (أو الأحدث) — موجود في `CA-Tools.rar` |
 | **المعرفة المسبقة** | أساسيات أنظمة الحاسوب، أنظمة العد (ثنائي، عشري، سداسي عشري) |
 
 </div>
@@ -261,9 +261,7 @@ Computer-Architecture-Lab/
 
 ### تحميل MARS من الموقع الرسمي (بديل)
 
-```bash
-https://courses.missouristate.edu/kenvollmar/mars/
-```
+[https://courses.missouristate.edu/kenvollmar/mars/](https://courses.missouristate.edu/kenvollmar/mars/)
 
 ---
 

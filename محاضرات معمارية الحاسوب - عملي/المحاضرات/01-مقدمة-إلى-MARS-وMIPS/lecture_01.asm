@@ -6,7 +6,7 @@
 # ---------------------------------------
 # 1. تأكد من تثبيت Java:              java -version
 # 2. حمّل MARS من حزمة CA-Tools.rar أو: https://courses.missouristate.edu/kenvollmar/mars/
-# 3. شغّل MARS:                       java -jar Mars_4_3.jar
+# 3. شغّل MARS:                       java -jar Mars4_3.jar
 # 4. افتح هذا الملف في MARS:          File -> Open
 # 5. للتجميع اضغط F3 (Assemble)
 # 6. للتشغيل اضغط F5 (Run)
