@@ -103,14 +103,26 @@
 
 ### 📥 تحميل المستودع كاملًا
 
-```bash
-# تحميل المستودع
-git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
+<table>
+<tr>
+  <td width="50%" valign="top" dir="rtl">
 
-# أو تحميل ZIP
-# افتح الرابط: https://github.com/tareq-alomari/Computer-Architecture-Lab
-# اضغط على زر Code ← Download ZIP
+**الطريقة 1: Git Clone (لمستخدمي Git)**
+```bash
+git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 ```
+  </td>
+  <td width="50%" valign="top" dir="rtl">
+
+**الطريقة 2: تحميل ZIP (لجميع الطلاب)**
+1. افتح [GitHub.com → Computer-Architecture-Lab](https://github.com/tareq-alomari/Computer-Architecture-Lab)
+2. اضغط على الزر الأخضر **⬇ Code**
+3. اختر **Download ZIP**
+4. فك ضغط الملف وابدأ الدراسة
+
+  </td>
+</tr>
+</table>
 
 ### 📂 محتوى كل محاضرة
 
