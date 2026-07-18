@@ -2,6 +2,16 @@
 # المحاضرة الأولى: مقدمة إلى MARS وأساسيات MIPS
 # Lecture 1: Introduction to MARS and MIPS Basics
 # ============================================================
+# تعليمات التثبيت (للاستخدام في MARS):
+# ---------------------------------------
+# 1. تأكد من تثبيت Java:      java -version
+# 2. حمّل MARS من:            https://courses.missouristate.edu/kenvollmar/mars/
+# 3. شغّل MARS:               java -jar Mars_4_5.jar
+# 4. افتح هذا الملف في MARS:  File -> Open
+# 5. للتجميع اضغط F3 (Assemble)
+# 6. للتشغيل اضغط F5 (Run)
+# 7. للتنفيذ خطوة بخطوة اضغط F7 (Step)
+# ---------------------------------------
 # يوضح هذا المثال كيفية طباعة Hello World وطباعة معلومات الطالب
 # Demonstrates printing Hello World and student information
 # ============================================================
