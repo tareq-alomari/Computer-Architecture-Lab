@@ -208,40 +208,120 @@ python3 /tmp/create_clean.py
 
 ---
 
-## 🎨 الهوية البصرية
+## 🎨 الهوية البصرية — دليل العلامة التجارية
+
+<div dir="rtl" align="center">
+تم تصميم الهوية البصرية لهذا المقرر لتتماشى مع العلامة التجارية لجامعة إب، وتعكس الاحترافية والجودة التعليمية.
+</div>
+
+### الألوان الأساسية
 
 <table>
 <tr>
-  <th align="center">العنصر</th>
-  <th align="center">اللون</th>
-  <th align="center">رمز HEX</th>
+  <th align="center" width="120">العيّنة</th>
+  <th align="center" width="160">الاسم</th>
+  <th align="center" width="120">HEX</th>
+  <th align="center">الاستخدام</th>
 </tr>
 <tr>
-  <td align="center">الأخضر الرئيسي</td>
+  <td align="center" bgcolor="#0C4A2D" style="border-radius: 8px;"></td>
+  <td align="center"><strong>الأخضر الملكي</strong><br><span style="color: #666; font-size: 0.8em;">Royal Green</span></td>
+  <td align="center"><code>#0C4A2D</code></td>
+  <td align="right">العناوين الرئيسية، الخلفيات الداكنة، التذييل</td>
+</tr>
+<tr>
   <td align="center" bgcolor="#15803D"></td>
+  <td align="center"><strong>الأخضر الزمردي</strong><br><span style="color: #666; font-size: 0.8em;">Emerald</span></td>
   <td align="center"><code>#15803D</code></td>
+  <td align="right">الأزرار، الأيقونات، العناصر التفاعلية</td>
 </tr>
 <tr>
-  <td align="center">الأخضر الداكن</td>
-  <td align="center" bgcolor="#14532D"></td>
-  <td align="center"><code>#14532D</code></td>
-</tr>
-<tr>
-  <td align="center">الأزرق السماوي</td>
   <td align="center" bgcolor="#0EA5E9"></td>
+  <td align="center"><strong>الأزرق السماوي</strong><br><span style="color: #666; font-size: 0.8em;">Sky Blue</span></td>
   <td align="center"><code>#0EA5E9</code></td>
+  <td align="right">الروابط، التمييز، العناصر الثانوية</td>
 </tr>
 <tr>
-  <td align="center">الذهبي</td>
-  <td align="center" bgcolor="#EAB308"></td>
-  <td align="center"><code>#EAB308</code></td>
+  <td align="center" bgcolor="#C79100"></td>
+  <td align="center"><strong>الذهبي الفخم</strong><br><span style="color: #666; font-size: 0.8em;">Gold</span></td>
+  <td align="center"><code>#C79100</code></td>
+  <td align="right">التأكيد، الدرجات، الشارات الخاصة</td>
 </tr>
 <tr>
-  <td align="center">النص الأساسي</td>
-  <td align="center" bgcolor="#1E293B"></td>
-  <td align="center"><code>#1E293B</code></td>
+  <td align="center" bgcolor="#1A1A2E"></td>
+  <td align="center"><strong>الكحلي العميق</strong><br><span style="color: #666; font-size: 0.8em;">Deep Navy</span></td>
+  <td align="center"><code>#1A1A2E</code></td>
+  <td align="right">النصوص الأساسية، الخطوط العريضة</td>
+</tr>
+<tr>
+  <td align="center" bgcolor="#F8F9FA"></td>
+  <td align="center"><strong>الخلفية الفاتحة</strong><br><span style="color: #666; font-size: 0.8em;">Light Background</span></td>
+  <td align="center"><code>#F8F9FA</code></td>
+  <td align="right">خلفيات الصفحات، البطاقات، الحواف</td>
 </tr>
 </table>
+
+### الألوان المساعدة
+
+<table>
+<tr>
+  <th align="center" width="120">العيّنة</th>
+  <th align="center" width="160">الاسم</th>
+  <th align="center" width="120">HEX</th>
+  <th align="center">الاستخدام</th>
+</tr>
+<tr>
+  <td align="center" bgcolor="#DC2626"></td>
+  <td align="center"><strong>الأحمر</strong></td>
+  <td align="center"><code>#DC2626</code></td>
+  <td align="right">أخطاء، تنبيهات، رسائل مهمة</td>
+</tr>
+<tr>
+  <td align="center" bgcolor="#059669"></td>
+  <td align="center"><strong>الأخضر الناصع</strong></td>
+  <td align="center"><code>#059669</code></td>
+  <td align="right">نجاح، اكتمال، تأكيد</td>
+</tr>
+<tr>
+  <td align="center" bgcolor="#D97706"></td>
+  <td align="center"><strong>البرتقالي</strong></td>
+  <td align="center"><code>#D97706</code></td>
+  <td align="right">تحذير، تنبيه متوسط</td>
+</tr>
+<tr>
+  <td align="center" bgcolor="#6B7280"></td>
+  <td align="center"><strong>الرمادي</strong></td>
+  <td align="center"><code>#6B7280</code></td>
+  <td align="right">نصوص ثانوية، توجيهات</td>
+</tr>
+</table>
+
+### قواعد الاستخدام
+
+<div dir="rtl">
+
+1. **الأخضر الملكي** (`#0C4A2D`) — اللون الأساسي للعلامة التجارية، يُستخدم في الشعار والعناوين الرئيسية.
+2. **الأخضر الزمردي** (`#15803D`) — لون التفاعل، يُستخدم للأزرار والعناصر القابلة للنقر.
+3. **الأزرق السماوي** (`#0EA5E9`) — لون الروابط والتمييز، يضيف حيوية للتصميم.
+4. **الذهبي الفخم** (`#C79100`) — لون التميز والدرجات العليا، يُستخدم باعتدال للفت الانتباه.
+5. يجب أن تكون التباينات واضحة لضمان سهولة القراءة (نسبة تباين ≥ 4.5:1).
+
+</div>
+
+---
+
+### تطبيقات الألوان
+
+| العنصر | اللون الأساسي | اللون الثانوي |
+|:---|:---:|:---:|
+| العناوين | <code>#0C4A2D</code> | <code>#15803D</code> |
+| النصوص | <code>#1A1A2E</code> | <code>#4B5563</code> |
+| الأزرار | <code>#15803D</code> | <code>#0C4A2D</code> |
+| الروابط | <code>#0EA5E9</code> | <code>#0284C7</code> |
+| الخلفيات | <code>#FFFFFF</code> | <code>#F8F9FA</code> |
+| الحدود | <code>#E5E7EB</code> | <code>#D1D5DB</code> |
+| التنبيه (نجاح) | <code>#059669</code> | <code>#D1FAE5</code> |
+| التنبيه (خطأ) | <code>#DC2626</code> | <code>#FEE2E2</code> |
 
 ---
 
