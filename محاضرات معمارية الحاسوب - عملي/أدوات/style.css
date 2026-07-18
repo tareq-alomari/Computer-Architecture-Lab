@@ -1,34 +1,65 @@
 /*
   ============================================================
-  Ibb University — Computer Architecture & MIPS Lectures
-  Visual identity: Dark Green (headings) + Sky Blue (accents) + Gold (highlights)
-  Reference: Ibb University shield logo + institutional template
+  Ibb University — Brand Style Sheet
+  Computer Architecture Lab — CS 221
+  -----------------------------------------------------------
+  Royal Green  : #0C4A2D (headings, dark backgrounds)
+  Emerald      : #15803D (buttons, icons)
+  Sky Blue     : #0EA5E9 (links, accents)
+  Gold         : #C79100 (highlights, premium elements)
+  Deep Navy    : #1A1A2E (body text)
   ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
 :root {
-  --bg: #FFFFFF;
-  --bg-soft: #F8FAFC;
-  --bg-tint: #F0F9FF;
-  --primary: #15803D;
-  --primary-dark: #14532D;
-  --primary-soft: #DCFCE7;
-  --secondary: #0EA5E9;
-  --secondary-dark: #0369A1;
-  --secondary-soft: #E0F2FE;
-  --accent: #EAB308;
-  --accent-dark: #CA8A04;
-  --accent-soft: #FEF9C3;
-  --ink: #0F172A;
-  --ink-muted: #475569;
-  --line: #E2E8F0;
-  --line-strong: #94A3B8;
+  /* ===== Primary Palette ===== */
+  --primary-900: #0C4A2D;     /* Royal Green */
+  --primary-800: #0F5C37;
+  --primary-700: #126E41;
+  --primary:     #15803D;     /* Emerald */
+  --primary-500: #22C55E;
+  --primary-400: #4ADE80;
+  --primary-300: #86EFAC;
+  --primary-200: #BBF7D0;
+  --primary-100: #DCFCE7;
+  --primary-50:  #F0FDF4;
 
+  /* ===== Secondary Palette ===== */
+  --secondary-900: #0369A1;
+  --secondary-800: #0284C7;
+  --secondary:     #0EA5E9;   /* Sky Blue */
+  --secondary-600: #38BDF8;
+  --secondary-500: #7DD3FC;
+  --secondary-400: #BAE6FD;
+  --secondary-300: #E0F2FE;
+  --secondary-200: #F0F9FF;
+
+  /* ===== Accent Palette (Gold) ===== */
+  --accent-900: #92400E;
+  --accent-800: #A16207;
+  --accent:     #C79100;      /* Gold */
+  --accent-600: #EAB308;
+  --accent-500: #FACC15;
+  --accent-400: #FDE047;
+  --accent-300: #FEF08A;
+  --accent-200: #FEF9C3;
+
+  /* ===== Neutral ===== */
+  --ink:       #1A1A2E;       /* Deep Navy */
+  --ink-muted: #4B5563;
+  --ink-light: #6B7280;
+  --bg:        #FFFFFF;
+  --bg-soft:   #F8F9FA;
+  --bg-tint:   #F0F9FF;
+  --line:      #E5E7EB;
+  --line-soft: #F3F4F6;
+
+  /* ===== Typography ===== */
   --font-heading: 'Cairo', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Cairo', 'Segoe UI', system-ui, sans-serif;
-  --font-num: 'JetBrains Mono', 'Cairo', monospace;
+  --font-body:    'Cairo', 'Segoe UI', system-ui, sans-serif;
+  --font-num:     'JetBrains Mono', 'Cairo', monospace;
 
   --fs-display: 56px;
   --fs-h1: 36px;
@@ -38,10 +69,13 @@
   --fs-small: 14px;
   --fs-micro: 12px;
 
+  /* ===== Spacing & Effects ===== */
   --radius: 12px;
   --radius-sm: 6px;
-  --shadow-soft: 0 4px 12px rgba(20, 83, 45, 0.06);
-  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-soft:  0 4px 12px rgba(12, 74, 45, 0.06);
+  --shadow-card:  0 8px 24px rgba(26, 26, 46, 0.08);
+  --shadow-btn:   0 2px 4px rgba(12, 74, 45, 0.1);
+  --shadow-hover: 0 4px 12px rgba(12, 74, 45, 0.2);
 }
 
 * { box-sizing: border-box; }
@@ -56,9 +90,9 @@ html, body {
   text-align: right;
 }
 
-/* Brand header strip */
+/* ===== Brand Header ===== */
 .page-header {
-  background: linear-gradient(90deg, var(--primary-dark), var(--primary));
+  background: linear-gradient(135deg, var(--primary-900), var(--primary));
   color: #fff;
   padding: 20px 40px;
   display: flex;
@@ -78,7 +112,18 @@ html, body {
   opacity: 0.85;
 }
 
-/* Cards */
+/* ===== Accent Bars ===== */
+.slide-bar-top {
+  height: 6px;
+  background: linear-gradient(90deg, var(--primary-900), var(--primary));
+}
+
+.slide-bar-bottom {
+  height: 4px;
+  background: linear-gradient(90deg, var(--secondary), var(--secondary-900));
+}
+
+/* ===== Cards ===== */
 .card {
   background: var(--bg-soft);
   border: 1px solid var(--line);
@@ -86,33 +131,38 @@ html, body {
   box-shadow: var(--shadow-soft);
   padding: 20px;
   margin-bottom: 16px;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-card);
 }
 
 .card-primary {
-  background: var(--primary-soft);
-  border: 1px solid #BBF7D0;
+  background: var(--primary-100);
+  border: 1px solid var(--primary-200);
   border-right: 4px solid var(--primary);
   border-radius: var(--radius);
   padding: 16px 20px;
 }
 
 .card-secondary {
-  background: var(--secondary-soft);
-  border: 1px solid #BAE6FD;
+  background: var(--secondary-200);
+  border: 1px solid var(--secondary-400);
   border-right: 4px solid var(--secondary);
   border-radius: var(--radius);
   padding: 16px 20px;
 }
 
 .card-accent {
-  background: var(--accent-soft);
-  border: 1px solid #FDE68A;
-  border-right: 4px solid var(--accent);
+  background: var(--accent-200);
+  border: 1px solid var(--accent-400);
+  border-right: 4px solid var(--accent-600);
   border-radius: var(--radius);
   padding: 16px 20px;
 }
 
-/* Chips */
+/* ===== Chips / Pills ===== */
 .chip {
   display: inline-flex;
   align-items: center;
@@ -121,12 +171,14 @@ html, body {
   border-radius: 999px;
   font-size: var(--fs-micro);
   font-weight: 600;
+  letter-spacing: 0.02em;
 }
-.chip-primary { background: var(--primary-soft); color: var(--primary-dark); }
-.chip-secondary { background: var(--secondary-soft); color: var(--secondary-dark); }
-.chip-accent { background: var(--accent-soft); color: var(--accent-dark); }
 
-/* Tables */
+.chip-primary { background: var(--primary-100); color: var(--primary-900); }
+.chip-secondary { background: var(--secondary-200); color: var(--secondary-900); }
+.chip-accent { background: var(--accent-200); color: var(--accent-900); }
+
+/* ===== Tables ===== */
 table {
   width: 100%;
   border-collapse: separate;
@@ -155,21 +207,23 @@ table td {
 
 table tr:nth-child(even) td { background: #F1F5F9; }
 
-/* Section headings */
+/* ===== Section Headings ===== */
+h1, h2, h3, h4 { font-family: var(--font-heading); }
+
 h2 {
-  color: var(--primary-dark);
+  color: var(--primary-900);
   font-weight: 800;
-  border-bottom: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent-600);
   padding-bottom: 8px;
   margin-top: 32px;
 }
 
 h3 {
-  color: var(--secondary-dark);
+  color: var(--secondary-900);
   font-weight: 700;
 }
 
-/* Icons with text */
+/* ===== Icons ===== */
 .icon-text {
   display: inline-flex;
   align-items: center;
@@ -178,17 +232,26 @@ h3 {
 
 .material-icons {
   vertical-align: middle;
+  font-size: 24px;
 }
 
-/* Brand logo */
+.material-icons.md-32 { font-size: 32px; }
+
+/* ===== Brand Logo ===== */
 .brand-logo {
-  width: 48px;
-  height: 48px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   border-radius: 8px;
 }
 
-/* Code blocks */
+.brand-logo-lg {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* ===== Code Blocks ===== */
 pre, code {
   font-family: var(--font-num);
   direction: ltr;
@@ -200,20 +263,25 @@ pre {
   color: #E2E8F0;
   padding: 16px 20px;
   border-radius: var(--radius);
-  border-right: 4px solid var(--accent);
+  border-right: 4px solid var(--accent-600);
   line-height: 1.7;
   overflow-x: auto;
 }
 
+pre .comment { color: #94A3B8; font-style: italic; }
+pre .keyword { color: #FBBF24; }
+pre .string  { color: #86EFAC; }
+pre .num     { color: #FCA5A5; }
+
 code {
   font-size: 0.92em;
-  background: var(--bg-tint);
-  color: var(--secondary-dark);
+  background: var(--secondary-200);
+  color: var(--secondary-900);
   padding: 1px 6px;
   border-radius: 4px;
 }
 
-/* Objectives / Goals lists */
+/* ===== Goal / Feature Lists ===== */
 .goal-list {
   list-style: none;
   padding: 0;
@@ -233,7 +301,7 @@ code {
   font-size: 20px;
 }
 
-/* Time blocks */
+/* ===== Time Blocks ===== */
 .time-block {
   display: flex;
   align-items: center;
@@ -247,22 +315,63 @@ code {
 .time-block .duration {
   font-family: var(--font-num);
   font-weight: 700;
-  color: var(--accent-dark);
+  color: var(--accent-900);
   min-width: 60px;
 }
 
-/* Grid layout */
+/* ===== Grid ===== */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 
-@media (max-width: 768px) {
-  .grid-2 { grid-template-columns: 1fr; }
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
 }
 
-/* Footer */
+@media (max-width: 768px) {
+  .grid-2, .grid-3 { grid-template-columns: 1fr; }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: var(--fs-small);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-btn);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-900);
+  box-shadow: var(--shadow-hover);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-900);
+}
+
+/* ===== Footer ===== */
 .footer {
   text-align: center;
   padding: 20px;
@@ -272,13 +381,52 @@ code {
   margin-top: 40px;
 }
 
-/* Tags */
+/* ===== Tags ===== */
 .tag {
   display: inline-block;
-  background: var(--accent-soft);
-  color: var(--accent-dark);
+  background: var(--accent-200);
+  color: var(--accent-900);
   padding: 2px 10px;
   border-radius: 999px;
   font-size: var(--fs-micro);
   font-weight: 600;
+}
+
+/* ===== Step Numbers ===== */
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: #fff;
+  font-family: var(--font-num);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* ===== Section Divider ===== */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+
+.section-divider .label {
+  font-family: var(--font-num);
+  font-size: var(--fs-micro);
+  color: var(--ink-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
