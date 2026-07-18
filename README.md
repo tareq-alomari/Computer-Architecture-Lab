@@ -80,6 +80,23 @@
   </a>
 </div>
 
+<div align="center" style="
+  background: #FFF7ED;
+  border: 2px solid #C79100;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 16px 0;
+">
+  <span style="font-size: 18px; font-weight: bold; color: #0C4A2D;">
+    🔄 يُحدّث هذا المستودع مع كل محاضرة
+  </span>
+  <br>
+  <span style="color: #6B7280; font-size: 14px;">
+    سيتم إضافة العروض التقديمية (<strong>.pptx</strong>)، روابط المحاضرات، وكل ما يلزم بشكل دوري —
+    تابع المستودع بالضغط على ⭐ Star ليصلك كل جديد
+  </span>
+</div>
+
 ---
 
 ## 📋 جدول المحتويات
