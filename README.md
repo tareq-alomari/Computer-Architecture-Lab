@@ -3,8 +3,8 @@
   <br><br>
   <h1 dir="rtl">معمارية الحاسوب - عملي</h1>
   <p dir="rtl"><strong>Computer Architecture Lab — CS 221</strong></p>
-  <p dir="rtl"><strong>جامعة إب — كلية علوم الحاسوب وتكنولوجيا المعلومات</strong></p>
-  <p dir="rtl">Ibb University — College of Computer Science & Information Technology</p>
+  <p dir="rtl"><strong>جامعة إب — كلية الحاسابات والعلوم التطبيقية</strong></p>
+  <p dir="rtl">Ibb University — College of Computing and Applied Sciences</p>
 
   [![License](https://img.shields.io/badge/license-Educational-blue)](#)
   [![Students](https://img.shields.io/badge/for-Students-success)](#)
@@ -73,7 +73,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 <div dir="rtl">
 
-يهدف هذا المقرر إلى تعليم طلاب كلية علوم الحاسوب وتكنولوجيا المعلومات في **جامعة إب** أساسيات لغة التجميع **MIPS Assembly** باستخدام بيئة المحاكاة **MARS**. يغطي المقرر 10 محاضرات عملية تمتد من المفاهيم الأساسية إلى الموضوعات المتقدمة مثل الدوال والمكدس.
+يهدف هذا المقرر إلى تعليم طلاب كلية الحاسابات والعلوم التطبيقية في **جامعة إب** أساسيات لغة التجميع **MIPS Assembly** باستخدام بيئة المحاكاة **MARS**. يغطي المقرر 10 محاضرات عملية تمتد من المفاهيم الأساسية إلى الموضوعات المتقدمة مثل الدوال والمكدس.
 
 </div>
 
@@ -250,7 +250,7 @@ python3 /tmp/create_clean.py
 <div dir="rtl">
 
 **طارق العمري** — Tareq Al-Omari  
-قسم علوم الحاسوب — كلية علوم الحاسوب وتكنولوجيا المعلومات  
+قسم علوم الحاسوب — كلية الحاسابات والعلوم التطبيقية  
 جامعة إب — الجمهورية اليمنية
 
 </div>
@@ -260,9 +260,9 @@ python3 /tmp/create_clean.py
 <div align="center">
   <img src="الشعار/images.jpeg" alt="Ibb University Logo" width="80" />
   <br>
-  <strong>جامعة إب — كلية علوم الحاسوب وتكنولوجيا المعلومات</strong>
+  <strong>جامعة إب — كلية الحاسابات والعلوم التطبيقية</strong>
   <br>
-  Ibb University — College of Computer Science & Information Technology
+  Ibb University — College of Computing and Applied Sciences
   <br><br>
   <sub>© 2024-2025 — جميع الحقوق محفوظة</sub>
 </div>
