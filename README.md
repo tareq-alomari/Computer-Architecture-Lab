@@ -15,6 +15,71 @@
   <hr style="border: 2px solid #15803D; width: 80%;">
 </div>
 
+<div dir="rtl" align="center" style="
+  background: linear-gradient(135deg, #0C4A2D 0%, #15803D 100%);
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin: 20px 0;
+  box-shadow: 0 4px 20px rgba(12, 74, 45, 0.3);
+  border: 2px solid #C79100;
+">
+  <span style="
+    display: inline-block;
+    background: #C79100;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 16px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+  ">📌 START HERE</span>
+  <br>
+  <span style="
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+  ">
+    📖 اقرأ دليل التثبيت أولاً، ثم حل ورقة العمل
+  </span>
+  <br>
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf" style="
+    display: inline-block;
+    background: #FFFFFF;
+    color: #0C4A2D;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 28px;
+    border-radius: 8px;
+    margin: 4px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+  " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    📄 اقرأ دليل MARS
+  </a>
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D9%85%D9%84%D8%AD%D9%82%D8%A7%D8%AA/%D8%AA%D8%AC%D9%87%D9%8A%D8%B2%20%D8%A7%D9%84%D8%A8%D9%8A%D8%A6%D8%A9/CA-Tools.rar" style="
+    display: inline-block;
+    background: #C79100;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 28px;
+    border-radius: 8px;
+    margin: 4px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
+  " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    ⬇ تحميل حزمة البيئة
+  </a>
+  <br><br>
+  <span style="color: #C79100; font-size: 14px;">
+    ⚡ بعد قراءة الدليل، افتح <strong>المحاضرة 1 → ورقة العمل</strong> وحل التمارين
+  </span>
+</div>
+
 ---
 
 ## 📋 جدول المحتويات
