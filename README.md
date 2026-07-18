@@ -76,7 +76,7 @@
   </a>
   <br><br>
   <span style="color: #C79100; font-size: 14px;">
-    ⚡ بعد قراءة الدليل، افتح <strong>المحاضرة 1 → ورقة العمل</strong> وحل التمارين
+    ⚡ حمل <strong>CA-Tools.rar</strong> واتبع التعليمات line by line
   </span>
 </div>
 
