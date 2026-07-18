@@ -61,7 +61,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 1. اقرأ **خطة المحاضرة** أولاً لتعرف الأهداف
 2. ادرس **تحليل المحاضرة** للمحتوى النظري
-3. حمّل **MARS** وجرّب الأكواد بنفسك
+3. حمّل **[CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** (يحتوي على MARS + Java JRE + Logisim) وجرّب الأكواد بنفسك
 4. حل **ورقة العمل** لتثبيت المعلومات
 5. استخدم **دليل MIPS الشامل** كمرجع سريع
 
@@ -131,6 +131,7 @@ Computer-Architecture-Lab/
     └── أدوات/                               # أدوات مساعدة
         ├── convert_to_pdf.py                # سكربت تحويل MD → PDF
         ├── style.css                        # هوية جامعة إب البصرية
+        ├── [📦 CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)  # حزمة البيئة (MARS + Java JRE + Logisim)
         └── 📖 دليل MIPS الشامل.md            # شرح جميع أوامر MIPS
 ```
 
@@ -141,8 +142,10 @@ Computer-Architecture-Lab/
 | **📄 الخطة** | أهداف، مدة زمنية، أنشطة، تقييم | `.md` + `.pdf` |
 | **📄 التحليل** | تحليل المحتوى والجمهور المستهدف | `.md` + `.pdf` |
 | **📄 ورقة عمل** | أسئلة نظرية، تمارين عملية، تحديات | `.md` |
-| **💻 كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` |
+| **💻 كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` (مثل `mips001.asm`) |
 | **📊 العرض** | شرائح عرض تقديمية (متوفرة للمحاضرة 1) | `.pptx` |
+| **📦 الحزمة** | حزمة البيئة (MARS + Java JRE + Logisim) | [CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar) |
+| **📘 دليل MARS** | دليل مصور لشرح العمل على MARS | [PDF](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf) |
 
 ---
 
@@ -158,14 +161,14 @@ Computer-Architecture-Lab/
 
 </div>
 
-### تحميل MARS
+### تحميل حزمة البيئة المتكاملة (يحتوي على كل ما تحتاجه)
+
+**[⬇ تحميل CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** ← يحتوي على MARS (`Mars4_3.jar`) + Java JRE + Logisim
+
+### تحميل MARS من الموقع الرسمي (بديل)
 
 ```bash
-# تحميل MARS من الموقع الرسمي
 https://courses.missouristate.edu/kenvollmar/mars/
-
-# تشغيل MARS
-java -jar Mars.jar
 ```
 
 ---
