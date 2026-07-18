@@ -173,8 +173,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 ---
 
-<a id="هيكل-المجلدات"></a>
-## 📁 هيكل المشروع
+## 📁 هيكل المجلدات
 
 ```
 Computer-Architecture-Lab/
@@ -289,7 +288,6 @@ python3 /tmp/create_clean.py
 
 ---
 
-<a id="الهوية-البصرية"></a>
 ## 🎨 الهوية البصرية
 
 <div dir="rtl">
@@ -298,7 +296,7 @@ python3 /tmp/create_clean.py
 
 ---
 
-## 👤 المؤلفون
+## 👤 المؤلف
 
 <div dir="rtl">
 
