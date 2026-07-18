@@ -75,9 +75,9 @@
     ⬇ تحميل حزمة البيئة
   </a>
   <br><br>
-  <span style="color: #C79100; font-size: 14px;">
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="color: #C79100; font-size: 14px; text-decoration: underline; text-underline-offset: 3px;">
     ⚡ حمل <strong>CA-Tools.rar</strong> واتبع التعليمات line by line
-  </span>
+  </a>
 </div>
 
 ---
