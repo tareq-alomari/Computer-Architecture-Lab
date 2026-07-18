@@ -287,9 +287,7 @@ Computer-Architecture-Lab/
 | <img src="https://img.shields.io/badge/MARS-4.3-orange" height="24"> | محاكاة وتجميع وتنفيذ كود MIPS |
 | <img src="https://img.shields.io/badge/Java-JRE_7+-blue" height="24"> | منصة تشغيل MARS |
 | <img src="https://img.shields.io/badge/Logisim-2.7-yellow" height="24"> | محاكي الدوائر المنطقية |
-| <img src="https://img.shields.io/badge/Python-3.12-blue" height="24"> | توليد العروض والملفات |
-| <img src="https://img.shields.io/badge/python--pptx-1.0.2-green" height="24"> | إنشاء عروض PowerPoint |
-| <img src="https://img.shields.io/badge/fpdf2-2.8-green" height="24"> | تحويل MD إلى PDF |
+
 
 ---
 
