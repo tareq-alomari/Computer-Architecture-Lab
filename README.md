@@ -333,5 +333,5 @@ Computer-Architecture-Lab/
   <br>
   Ibb University — College of Computing and Applied Sciences
   <br><br>
-  <sub>© 2024-2025 — جميع الحقوق محفوظة</sub>
+  <sub>© 2026 — جميع الحقوق محفوظة</sub>
 </div>

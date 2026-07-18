@@ -185,5 +185,5 @@
   <br>
   <sub>Ibb University — College of Computing and Applied Sciences</sub>
   <br><br>
-  <sub>© 2024-2025 — جميع الحقوق محفوظة</sub>
+  <sub>© 2026 — جميع الحقوق محفوظة</sub>
 </div>
