@@ -173,6 +173,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 ---
 
+<a id="هيكل-المجلدات"></a>
 ## 📁 هيكل المشروع
 
 ```
@@ -288,6 +289,7 @@ python3 /tmp/create_clean.py
 
 ---
 
+<a id="الهوية-البصرية"></a>
 ## 🎨 الهوية البصرية — دليل العلامة التجارية
 
 <div dir="rtl" align="center">
