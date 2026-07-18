@@ -7,6 +7,7 @@
   <p dir="rtl">Ibb University — College of Computer Science & Information Technology</p>
 
   [![License](https://img.shields.io/badge/license-Educational-blue)](#)
+  [![Students](https://img.shields.io/badge/for-Students-success)](#)
   [![MIPS](https://img.shields.io/badge/architecture-MIPS-brightgreen)](#)
   [![MARS](https://img.shields.io/badge/simulator-MARS_4.5-orange)](#)
   [![Language](https://img.shields.io/badge/language-Arabic_%7C_English-lightgrey)](#)
@@ -28,6 +29,45 @@
 - [المؤلف](#المؤلف)
 
 ---
+
+## 🎓 للطلاب — كيفية الوصول إلى المحتوى
+
+<div dir="rtl">
+
+هذا المستودع يحتوي على جميع مواد مقرر **معمارية الحاسوب - عملي**. يمكنك الوصول إلى المحتوى بالطرق التالية:
+
+### 📥 تحميل المستودع كاملًا
+
+```bash
+# تحميل المستودع
+git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
+
+# أو تحميل ZIP
+# افتح الرابط: https://github.com/tareq-alomari/Computer-Architecture-Lab
+# اضغط على زر Code ← Download ZIP
+```
+
+### 📂 محتوى كل محاضرة
+
+| الملف | الوصف |
+|:---:|---|
+| `خطة المحاضرة` | الأهداف والمدة الزمنية والأنشطة |
+| `تحليل المحاضرة` | شرح تفصيلي للمحتوى |
+| `ورقة عمل` | تمارين وأنشطة عملية للحل |
+| `lecture_XX.asm` | أكواد MIPS قابلة للتشغيل في MARS |
+| `*.pptx` | شرائح العرض التقديمي |
+
+### 💡 نصائح للدراسة
+
+1. اقرأ **خطة المحاضرة** أولاً لتعرف الأهداف
+2. ادرس **تحليل المحاضرة** للمحتوى النظري
+3. حمّل **MARS** وجرّب الأكواد بنفسك
+4. حل **ورقة العمل** لتثبيت المعلومات
+5. استخدم **دليل MIPS الشامل** كمرجع سريع
+
+</div>
+
+---  
 
 ## 🎯 عن المقرر
 
