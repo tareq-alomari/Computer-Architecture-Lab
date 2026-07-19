@@ -259,10 +259,6 @@ Computer-Architecture-Lab/
 
 **[تحميل CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** ← يحتوي على MARS (`Mars4_3.jar`) + Java JRE + Logisim
 
-### تحميل MARS من الموقع الرسمي (بديل)
-
-[https://courses.missouristate.edu/kenvollmar/mars/](https://courses.missouristate.edu/kenvollmar/mars/)
-
 ---
 
 ## كيفية الاستخدام
