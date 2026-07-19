@@ -303,7 +303,7 @@ Computer-Architecture-Lab/
 <tr>
   <td width="50%" valign="top" style="border-left: 2px solid #15803D; padding-left: 16px;">
 
-**د. خالد القحصة** — Dr. Khalid Al-Kahsah  
+**د. خالد الكحسة** — Dr. Khalid Al-Kahsah  
 **المحاضرات النظرية** — معمارية الحاسوب (CSIT 211)  
 جامعة إب — كلية الحاسابات والعلوم التطبيقية
 
