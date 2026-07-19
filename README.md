@@ -32,7 +32,7 @@
     padding: 4px 16px;
     border-radius: 20px;
     margin-bottom: 12px;
-  ">📌 START HERE</span>
+  ">START HERE</span>
   <br>
   <span style="
     color: #FFFFFF;
@@ -41,7 +41,7 @@
     display: block;
     margin-bottom: 8px;
   ">
-    📖 اقرأ دليل التثبيت أولاً، ثم حل ورقة العمل
+    اقرأ دليل التثبيت أولاً، ثم حل ورقة العمل
   </span>
   <br>
   <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf" style="
@@ -57,7 +57,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s;
   ">
-    📄 اقرأ دليل MARS
+    اقرأ دليل MARS
   </a>
   <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="
     display: inline-block;
@@ -72,7 +72,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s;
   ">
-    ⬇ تحميل حزمة البيئة
+    تحميل حزمة البيئة
   </a>
   <br><br>
   <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="color: #C79100; font-size: 14px; text-decoration: underline; text-underline-offset: 3px;">
@@ -88,18 +88,18 @@
   margin: 16px 0;
 ">
   <span style="font-size: 18px; font-weight: bold; color: #0C4A2D;">
-    🔄 يُحدّث هذا المستودع مع كل محاضرة
+    يُحدّث هذا المستودع مع كل محاضرة
   </span>
   <br>
   <span style="color: #6B7280; font-size: 14px;">
     سيتم إضافة العروض التقديمية (<strong>.pptx</strong>)، روابط المحاضرات، وكل ما يلزم بشكل دوري —
-    تابع المستودع بالضغط على ⭐ Star ليصلك كل جديد
+    تابع المستودع بالضغط على Star ليصلك كل جديد
   </span>
 </div>
 
 ---
 
-## 📋 جدول المحتويات
+## جدول المحتويات
 
 - [للطلاب](#للطلاب)
 - [عن المقرر](#عن-المقرر)
@@ -114,13 +114,13 @@
 ---
 
 <a id="للطلاب"></a>
-## 🎓 للطلاب — كيفية الوصول إلى المحتوى
+## للطلاب — كيفية الوصول إلى المحتوى
 
 <div dir="rtl">
 
 هذا المستودع يحتوي على جميع مواد مقرر **معمارية الحاسوب - عملي**. يمكنك الوصول إلى المحتوى بالطرق التالية:
 
-### 📥 تحميل المستودع كاملًا
+### تحميل المستودع كاملًا
 
 <table>
 <tr>
@@ -135,7 +135,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 **الطريقة 2: تحميل ZIP (لجميع الطلاب)**
 1. افتح [GitHub.com → Computer-Architecture-Lab](https://github.com/tareq-alomari/Computer-Architecture-Lab)
-2. اضغط على الزر الأخضر **⬇ Code**
+2. اضغط على الزر الأخضر **Code**
 3. اختر **Download ZIP**
 4. فك ضغط الملف وابدأ الدراسة
 
@@ -143,7 +143,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 </tr>
 </table>
 
-### 📂 محتوى كل محاضرة
+### محتوى كل محاضرة
 
 | الملف | الوصف |
 |:---:|---|
@@ -153,7 +153,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 | `lecture_XX.asm` | أكواد MIPS قابلة للتشغيل في MARS |
 | `*.pptx` | شرائح العرض التقديمي |
 
-### 💡 نصائح للدراسة
+### نصائح للدراسة
 
 1. اقرأ **خطة المحاضرة** أولاً لتعرف الأهداف
 2. ادرس **تحليل المحاضرة** للمحتوى النظري
@@ -165,7 +165,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 ---  
 
-## 🎯 عن المقرر
+## عن المقرر
 
 <div dir="rtl">
 
@@ -175,7 +175,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 ---
 
-## 📚 المحاضرات
+## المحاضرات
 
 | # | عنوان المحاضرة | الموضوعات الرئيسية |
 |:---:|---|---|
@@ -192,7 +192,7 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 ---
 
-## 📁 هيكل المشروع
+## هيكل المشروع
 
 ```
 Computer-Architecture-Lab/
@@ -206,11 +206,11 @@ Computer-Architecture-Lab/
     │
     ├── المحاضرات/                           # 10 محاضرات دراسية
     │   ├── 01-مقدمة-إلى-MARS-وMIPS/
-    │   │   ├── 📄 خطة المحاضرة 1.md          # خطة تدريسية مفصلة
-    │   │   ├── 📄 تحليل المحاضرة 1.md        # تحليل المحتوى التعليمي
-    │   │   ├── 📄 ورقة عمل المحاضرة 1.md     # تمارين وأنشطة
-    │   │   ├── 💻 lecture_01.asm             # أمثلة عملية MIPS
-    │   │   └── 💻 mips001.asm                # مثال تفاعلي من دليل MARS
+    │   │   ├── خطة المحاضرة 1.md          # خطة تدريسية مفصلة
+    │   │   ├── تحليل المحاضرة 1.md        # تحليل المحتوى التعليمي
+    │   │   ├── ورقة عمل المحاضرة 1.md     # تمارين وأنشطة
+    │   │   ├── lecture_01.asm             # أمثلة عملية MIPS
+    │   │   └── mips001.asm                # مثال تفاعلي من دليل MARS
     │   │
     │   ├── 02-العمليات-الحسابية-الأساسية/
     │   ├── 03-العمليات-المنطقية-وإزاحة-البتات/
@@ -225,25 +225,25 @@ Computer-Architecture-Lab/
     └── أدوات/                               # أدوات مساعدة
         ├── convert_to_pdf.py                # سكربت تحويل MD → PDF
         ├── style.css                        # هوية جامعة إب البصرية
-        ├── 📦 CA-Tools.rar                  # حزمة البيئة (MARS + Java JRE + Logisim)
-        ├── 📘 شرح العمل على برنامج mars.pdf # دليل MARS المصور
-        └── 📖 دليل MIPS الشامل - شرح كل رمز.md # شرح جميع أوامر MIPS
+        ├── CA-Tools.rar                     # حزمة البيئة (MARS + Java JRE + Logisim)
+        ├── شرح العمل على برنامج mars.pdf   # دليل MARS المصور
+        └── دليل MIPS الشامل - شرح كل رمز.md    # شرح جميع أوامر MIPS
 ```
 
 ### مكونات كل محاضرة
 
 | المكون | الوصف | الصيغة |
 |:---:|---|---|
-| **📄 الخطة** | أهداف، مدة زمنية، أنشطة، تقييم | `.md` |
-| **📄 التحليل** | تحليل المحتوى والجمهور المستهدف | `.md` |
-| **📄 ورقة عمل** | أسئلة نظرية، تمارين عملية، تحديات | `.md` |
-| **💻 كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` |
-| **📦 الحزمة** | حزمة البيئة (MARS + Java JRE + Logisim) | [CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar) |
-| **📘 دليل MARS** | دليل مصور لشرح العمل على MARS | [PDF](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf) |
+| **الخطة** | أهداف، مدة زمنية، أنشطة، تقييم | `.md` |
+| **التحليل** | تحليل المحتوى والجمهور المستهدف | `.md` |
+| **ورقة عمل** | أسئلة نظرية، تمارين عملية، تحديات | `.md` |
+| **كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` |
+| **الحزمة** | حزمة البيئة (MARS + Java JRE + Logisim) | [CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar) |
+| **دليل MARS** | دليل مصور لشرح العمل على MARS | [PDF](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf) |
 
 ---
 
-## 💻 متطلبات المقرر
+## متطلبات المقرر
 
 <div dir="rtl">
 
@@ -257,7 +257,7 @@ Computer-Architecture-Lab/
 
 ### تحميل حزمة البيئة المتكاملة (يحتوي على كل ما تحتاجه)
 
-**[⬇ تحميل CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** ← يحتوي على MARS (`Mars4_3.jar`) + Java JRE + Logisim
+**[تحميل CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** ← يحتوي على MARS (`Mars4_3.jar`) + Java JRE + Logisim
 
 ### تحميل MARS من الموقع الرسمي (بديل)
 
@@ -265,7 +265,7 @@ Computer-Architecture-Lab/
 
 ---
 
-## 🚀 كيفية الاستخدام
+## كيفية الاستخدام
 
 ### تشغيل أكواد MIPS
 
@@ -279,7 +279,7 @@ Computer-Architecture-Lab/
 
 ---
 
-## 🛠️ الأدوات والتقنيات
+## الأدوات والتقنيات
 
 | الأداة | الغرض |
 |:---:|---|
@@ -291,15 +291,15 @@ Computer-Architecture-Lab/
 
 ---
 
-## 🎨 الهوية البصرية
+## الهوية البصرية
 
 <div dir="rtl">
-دليل العلامة التجارية الكامل موجود في ملف منفصل: <a href="BRAND_GUIDE.md"><strong>📄 BRAND_GUIDE.md</strong></a> — يتضمن الألوان والخطوط والتخطيطات.
+دليل العلامة التجارية الكامل موجود في ملف منفصل: <a href="BRAND_GUIDE.md"><strong>BRAND_GUIDE.md</strong></a> — يتضمن الألوان والخطوط والتخطيطات.
 </div>
 
 ---
 
-## 👤 المؤلفون
+## المؤلفون
 
 <div dir="rtl">
 
@@ -308,15 +308,15 @@ Computer-Architecture-Lab/
   <td width="50%" valign="top" style="border-left: 2px solid #15803D; padding-left: 16px;">
 
 **د. خالد القحصة** — Dr. Khalid Al-Kahsah  
-🖊 **المحاضرات النظرية** — معمارية الحاسوب (CSIT 211)  
-🏛 جامعة إب — كلية الحاسابات والعلوم التطبيقية
+**المحاضرات النظرية** — معمارية الحاسوب (CSIT 211)  
+جامعة إب — كلية الحاسابات والعلوم التطبيقية
 
   </td>
   <td width="50%" valign="top" style="padding-right: 16px;">
 
 **طارق العمري** — Tareq Al-Omari  
-🖊 **المهندس المحاضر العملي**  
-🏛 قسم علوم الحاسوب — كلية الحاسابات والعلوم التطبيقية
+**المهندس المحاضر العملي**  
+قسم علوم الحاسوب — كلية الحاسابات والعلوم التطبيقية
 
   </td>
 </tr>
