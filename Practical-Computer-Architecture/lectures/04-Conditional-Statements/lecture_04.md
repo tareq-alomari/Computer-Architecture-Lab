@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| زوجي/فردي | `lecture_04a_even_odd.asm` | `andi`, `beqz` |
+| موجب/سالب/صفر | `lecture_04b_sign.asm` | `bgt`, `blt`, `$zero` |
+
+---
+
 ## شرح كل أمر
 
 ### `andi $t1, $t0, 1`
@@ -135,3 +144,26 @@ done:
 | `bne $a, $b, L` | if (`$a != $b`) goto L | `if (a != b)` |
 | `b L` | goto L (غير مشروط) | `goto L` |
 | `$zero` | مسجل قيمته دائماً 0 | `0` |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Read x]
+    B --> C{x & 1 == 0?}
+    C -- Yes --> D[Print 'Even']
+    C -- No --> E[Print 'Odd']
+    D --> F{x > 0?}
+    E --> F
+    F -- Yes --> G[Print 'Positive']
+    F -- No --> H{x < 0?}
+    H -- Yes --> I[Print 'Negative']
+    H -- No --> J[Print 'Zero']
+    G --> K[End]
+    I --> K
+    J --> K
+```
+
+![Flowchart](./lecture_04_cpp_flowchart.png)

@@ -1,16 +1,24 @@
 # ============================================================
-# المحاضرة التاسعة: الدوال والمكدس — jal, jr, $sp, $ra
+# 09: الدوال والمكدس — jal, jr, $sp, $ra
 # ============================================================
 #
-# ----------------------------------
-# الأوامر الجديدة:
-#   jal label   →  استدعِ الدالة + احفظ $ra   (C++: result = func();)
-#   jr $ra      →  ارجع من الدالة              (C++: return;)
-#   $ra         →  عنوان الرجوع
-#   $sp         →  مؤشر المكدس
-#   $a0-$a3     →  معاملات الدالة
-#   $v0         →  قيمة إرجاع الدالة
-# ----------------------------------
+# ✨ تعلّم الدوال (Functions) في MIPS!
+#   main يستدعي add_func و factorial
+#
+# للنسخ المبسّطة، راجع:
+#   lecture_09a_add_func.asm   ← دالة جمع فقط
+#   lecture_09b_factorial.asm  ← دالة مضروب فقط
+#
+# أوامر جديدة:
+#   jal label   → استدعِ الدالة (احفظ $ra واقفز)
+#   jr $ra      → ارجع من الدالة
+#   $ra         → عنوان الرجوع
+#   $sp         → مؤشر المكدس
+#   $a0-$a3     → معاملات الدالة
+#   $v0         → قيمة إرجاع الدالة
+#
+# كل سطر له شرح بالعربي 👇
+# ============================================================
 
 .data
     msg_add: .asciiz "5 + 3 = "
@@ -20,44 +28,38 @@
 .text
 main:
     # ========================================
-    # مثال J: دالة add — اجمع رقمين
-    # C++:
-    #   int add(int a, int b) { return a + b; }
-    #   int main() { int r = add(5, 3); cout << r; }
+    # مثال 1: دالة add — 5 + 3 = 8
     # ========================================
     la $a0, msg_add
     li $v0, 4
     syscall
 
-    li $a0, 5                    # $a0 = 5  (المعامل الأول)
-    li $a1, 3                    # $a1 = 3  (المعامل الثاني)
-    jal add_func                 # استدعِ add  ← يحفظ $ra ويقفز
+    li $a0, 5                  # $a0 = 5 (المعامل الأول)
+    li $a1, 3                  # $a1 = 3 (المعامل الثاني)
+    jal add_func               # استدعِ الدالة
+                                # 1) $ra = عنوان السطر التالي
+                                # 2) اقفز إلى add_func
 
-    move $a0, $v0                # $v0 = النتيجة (8)
+    move $a0, $v0              # $v0 = النتيجة (8)
     li $v0, 1
-    syscall
+    syscall                    # يظهر: 8
     la $a0, newline
     li $v0, 4
     syscall
 
     # ========================================
-    # مثال K: دالة factorial — 5!
-    # C++:
-    #   int factorial(int n) {
-    #       if (n <= 1) return 1;
-    #       return n * factorial(n - 1);
-    #   }
+    # مثال 2: دالة factorial — 5! = 120
     # ========================================
     la $a0, msg_fact
     li $v0, 4
     syscall
 
-    li $a0, 5                    # $a0 = 5
-    jal factorial                # استدعِ factorial
+    li $a0, 5                  # $a0 = 5
+    jal factorial              # استدعِ factorial(5)
 
-    move $a0, $v0                # اطبع النتيجة
+    move $a0, $v0              # $v0 = 120
     li $v0, 1
-    syscall
+    syscall                    # يظهر: 120
 
     li $v0, 10
     syscall
@@ -66,32 +68,32 @@ main:
 # الدالة add_func: $v0 = $a0 + $a1
 # ========================================
 add_func:
-    add $v0, $a0, $a1           # $v0 = $a0 + $a1   (C++: return a + b;)
-    jr $ra                      # ارجع إلى main
+    add $v0, $a0, $a1         # $v0 = $a0 + $a1
+    jr $ra                    # ارجع إلى main
 
 # ========================================
 # الدالة factorial: $v0 = $a0!
-# تحتاج مكدس لأنها تستدعي نفسها (recursion)
+# تستخدم المكدس لأنها recursion
 # ========================================
 factorial:
     # --- احفظ $ra و $a0 في المكدس ---
-    addi $sp, $sp, -8            # احجز 8 بايت
-    sw $ra, 0($sp)               # احفظ $ra  (لأن jal داخلي سيغيره)
-    sw $a0, 4($sp)               # احفظ $a0
+    addi $sp, $sp, -8          # $sp = $sp - 8 (احجز خانتين)
+    sw $ra, 0($sp)             # احفظ عنوان الرجوع
+    sw $a0, 4($sp)             # احفظ قيمة n
 
     li $t0, 1
-    ble $a0, $t0, base_case      # إذا n <= 1 → base case
+    ble $a0, $t0, base_case    # if n <= 1 → base case
 
-    addi $a0, $a0, -1            # n = n - 1
-    jal factorial                # factorial(n-1)
-    lw $a0, 4($sp)               # استرجع $a0 (n الأصلي)
-    mul $v0, $a0, $v0            # n * factorial(n-1)
+    addi $a0, $a0, -1          # n = n - 1
+    jal factorial              # factorial(n-1)
+    lw $a0, 4($sp)             # استرجع القيمة الأصلية لـ n
+    mul $v0, $a0, $v0          # n * factorial(n-1)
     b return_fact
 
 base_case:
-    li $v0, 1                    # return 1
+    li $v0, 1                  # return 1
 
 return_fact:
-    lw $ra, 0($sp)               # استرجع $ra
-    addi $sp, $sp, 8             # حرّر المكدس
-    jr $ra                       # ارجع
+    lw $ra, 0($sp)             # استرجع عنوان الرجوع
+    addi $sp, $sp, 8           # حرّر المكدس
+    jr $ra                     # ارجع

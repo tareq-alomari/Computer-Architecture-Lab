@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| إدخال المصفوفة | `lecture_07a_input.asm` | `sw`, `sll` مع حلقة |
+| حساب المجموع | `lecture_07b_sum.asm` | `lw`, `sll` مع حلقة |
+
+---
+
 ## شرح كل أمر
 
 ### المصفوفة في الذاكرة
@@ -125,3 +134,22 @@ sum_done:
 | `sw $v, 0($b)` | خزّن في RAM عند (`$b + 0`) | `arr[i] = val` |
 | `lw $v, 0($b)` | أحضر من RAM عند (`$b + 0`) | `val = arr[i]` |
 | `$s0-$s7` | saved registers (للحفظ الدائم) | متغيرات ثابتة |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[arr[5], sum = 0]
+    B --> C[i = 0]
+    C --> D{i < 5?}
+    D -- Yes --> E[Read arr[i]]
+    E --> F[sum += arr[i]]
+    F --> G[i++]
+    G --> D
+    D -- No --> H[Print sum]
+    H --> I[End]
+```
+
+![Flowchart](./lecture_07_cpp_flowchart.png)

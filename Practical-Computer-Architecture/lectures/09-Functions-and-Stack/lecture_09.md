@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| دالة جمع | `lecture_09a_add_func.asm` | `jal`, `jr`, `$ra` |
+| دالة مضروب | `lecture_09b_factorial.asm` | `$sp`, مكدس, recursion |
+
+---
+
 ## شرح كل أمر
 
 ### `jal add`
@@ -165,3 +174,31 @@ return_fact:
 | حفظ قيمة | `sw $ra, 0($sp)` | احفظ في المكدس |
 | استرجاع قيمة | `lw $ra, 0($sp)` | خذ من المكدس |
 | تحرير مساحة | `addi $sp, $sp, 8` | حرّك $sp لأعلى 8 بايت |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Call add_func5, 3]
+    B --> C[Print 5 + 3 = 8]
+    C --> D[Call factorial5]
+    D --> E[Print 5! = 120]
+    E --> F[End]
+
+    subgraph add_func
+        G[Receive a, b] --> H[return a + b]
+    end
+
+    subgraph factorial
+        I[Receive n] --> J{n <= 1?}
+        J -- Yes --> K[return 1]
+        J -- No --> L[return n * factorialn-1]
+    end
+
+    B -.-> add_func
+    D -.-> factorial
+```
+
+![Flowchart](./lecture_09_cpp_flowchart.png)

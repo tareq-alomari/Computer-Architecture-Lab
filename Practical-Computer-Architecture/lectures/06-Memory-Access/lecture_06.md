@@ -2,6 +2,16 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| قراءة من RAM | `lecture_06a_lw.asm` | `lw` (Load Word) |
+| كتابة إلى RAM | `lecture_06b_sw.asm` | `sw` (Store Word) |
+| عنوان vs قيمة | `lecture_06c_la.asm` | `la` (Load Address) |
+
+---
+
 ## شرح كل أمر
 
 ### الفرق بين Register و Memory
@@ -118,3 +128,23 @@ main:
 | `sw $t, label` | Store Word: register → RAM | `x = t` |
 | `la $t, label` | Load Address: `$t = &label` | `t = &x` |
 | `syscall 34` | اطبع hex | `cout << hex << x` |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[x = 42, y = 0]
+    B --> C[t0 = x]
+    C --> D[Print x]
+    D --> E[t1 = 99]
+    E --> F[y = t1]
+    F --> G[t2 = y]
+    G --> H[Print y]
+    H --> I[t3 = &x]
+    I --> J[Print address of x]
+    J --> K[End]
+```
+
+![Flowchart](./lecture_06_cpp_flowchart.png)

@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| `for` loop | `lecture_05a_for_loop.asm` | `bgt`, `addi`, `b` |
+| `while` loop | `lecture_05b_while_loop.asm` | `bgt`, `add`, `addi` |
+
+---
+
 ## شرح كل أمر
 
 ### بنية الحلقة في Assembly
@@ -128,3 +137,26 @@ done_sum:
 | التكرار | `b loop` | `}` (عد مرة أخرى) |
 
 > **ملاحظة:** نستخدم `bgt` (أكبر من) للخروج. الحلقة تستمر طالما `i <= limit`، وتتوقف عندما `i > limit` (أي `bgt`). هذا عكس شرط C++ مباشرة.
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[i = 1]
+    B --> C{i <= 10?}
+    C -- Yes --> D[Print i]
+    D --> E[i++]
+    E --> C
+    C -- No --> F[Read N]
+    F --> G[sum = 0, i = 1]
+    G --> H{i <= N?}
+    H -- Yes --> I[sum += i]
+    I --> J[i++]
+    J --> H
+    H -- No --> K[Print sum]
+    K --> L[End]
+```
+
+![Flowchart](./lecture_05_cpp_flowchart.png)

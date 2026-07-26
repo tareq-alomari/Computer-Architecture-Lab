@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| جمع وطرح | `lecture_02a_add_sub.asm` | `add`, `sub` |
+| ضرب وقسمة | `lecture_02b_mul_div.asm` | `mul`, `div`, `mflo`, `mfhi` |
+
+---
+
 ## شرح كل أمر
 
 ### `li $t0, 10` / `li $t1, 3`
@@ -152,3 +161,25 @@ main:
 | `div $a, $b` | `$a ÷ $b` (ناتج في LO, باقٍ في HI) | `a / b`, `a % b` |
 | `mflo $d` | `$d = LO` (جلب ناتج القسمة) | `d = a / b` |
 | `mfhi $d` | `$d = HI` (جلب باقي القسمة) | `d = a % b` |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[a = 10, b = 3]
+    B --> C[t2 = a + b]
+    C --> D[Print a + b]
+    D --> E[t3 = a - b]
+    E --> F[Print a - b]
+    F --> G[t4 = a * b]
+    G --> H[Print a * b]
+    H --> I[t5 = a / b]
+    I --> J[Print a / b]
+    J --> K[t6 = a % b]
+    K --> L[Print a % b]
+    L --> M[End]
+```
+
+![Flowchart](./lecture_02_cpp_flowchart.png)

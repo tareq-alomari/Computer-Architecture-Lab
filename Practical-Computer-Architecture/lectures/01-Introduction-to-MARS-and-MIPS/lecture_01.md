@@ -145,3 +145,16 @@ main:
 | `syscall` | طلب خدمة من نظام التشغيل | `cin / cout` |
 | `$a0` | مسجل للوسائط (هنا: عنوان النص) | argument 0 |
 | `$v0` | مسجل رقم الخدمة | return value 0 |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Print 'Hello World!']
+    B --> C[return 0]
+    C --> D[End]
+```
+
+![Flowchart](./lecture_01_cpp_flowchart.png)

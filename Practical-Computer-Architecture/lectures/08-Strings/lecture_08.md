@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| حساب طول النص | `lecture_08a_strlen.asm` | `lb`, `beqz` |
+| تحويل إلى uppercase | `lecture_08b_to_upper.asm` | `lb`, `sb`, `blt`, `bgt` |
+
+---
+
 ## شرح كل أمر
 
 ### ASCII Chart (مهم)
@@ -148,3 +157,28 @@ done_upper:
 | `'a'` (97) | `'A'` (65) | `- 32` |
 | `'z'` (122) | `'Z'` (90) | `- 32` |
 | `'A'` (65) | `'a'` (97) | `+ 32` |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[str = 'hello']
+    B --> C[len = 0]
+    C --> D{str[len] != '\0'?}
+    D -- Yes --> E[len++]
+    E --> D
+    D -- No --> F[Print length]
+    F --> G[i = 0]
+    G --> H{str[i] != '\0'?}
+    H -- Yes --> I{'a' <= str[i] <= 'z'?}
+    I -- Yes --> J[str[i] -= 32]
+    J --> K[i++]
+    I -- No --> K
+    K --> H
+    H -- No --> L[Print uppercase str]
+    L --> M[End]
+```
+
+![Flowchart](./lecture_08_cpp_flowchart.png)

@@ -16,6 +16,20 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+بدلاً من برنامج واحد كبير، قسّمنا المشروع إلى 3 برامج صغيرة، كل واحد يركز على مفهوم واحد:
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| إدخال الدرجات | `lecture_10a_input.asm` | مصفوفة، حلقات، `sw` |
+| عرض الدرجات | `lecture_10b_display.asm` | مصفوفة، حلقات، `lw` |
+| حساب المتوسط | `lecture_10c_average.asm` | مصفوفة، قسمة `div`/`mflo` |
+
+الملف الأصلي `lecture_10.asm` يبقى كاملًا كمرجع.
+
+---
+
 ## شرح الكود
 
 ### المتغيرات
@@ -213,3 +227,42 @@ exit:
     li $v0, 10
     syscall
 ```
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Show menu]
+    B --> C[Read choice]
+    C --> D{choice?}
+
+    D -- 1 --> E[Read n]
+    E --> F[sum = 0, i = 0]
+    F --> G{i < n?}
+    G -- Yes --> H[Read grade]
+    H --> I[sum += grade]
+    I --> J[i++]
+    J --> G
+    G -- No --> B
+
+    D -- 2 --> K[i = 0]
+    K --> L{i < n?}
+    L -- Yes --> M[Print Student i+1, grade]
+    M --> N[i++]
+    N --> L
+    L -- No --> B
+
+    D -- 3 --> O[average = sum / n]
+    O --> P[Print average]
+    P --> B
+
+    D -- 4 --> Q[Print 'Goodbye!']
+    Q --> R[End]
+
+    D -- else --> S[Print 'Invalid!']
+    S --> B
+```
+
+![Flowchart](./lecture_10_cpp_flowchart.png)

@@ -1,17 +1,24 @@
 # ============================================================
-# المحاضرة العاشرة: المشروع النهائي — نظام درجات الطلاب
+# 10: المشروع النهائي — نظام درجات الطلاب
 # ============================================================
 #
-# هذا المشروع يجمع كل المفاهيم:
-#   .space, lw, sw     →  الذاكرة والمصفوفة
-#   sll, add           →  الوصول إلى arr[i]
-#   beq, bgt           →  الشروط
-#   addi, b            →  الحلقات
-#   div, mflo          →  القسمة (المتوسط)
-# ----------------------------------
+# ✨ هذا المشروع يجمع كل ما تعلمناه:
+#   .space, lw, sw     → الذاكرة والمصفوفة
+#   sll, add           → الوصول إلى arr[i]
+#   beq, bgt           → الشروط
+#   addi, b            → الحلقات
+#   div, mflo          → القسمة (المتوسط)
+#
+# للنسخ المبسّطة، راجع:
+#   lecture_10a_input.asm    ← إدخال درجات فقط
+#   lecture_10b_display.asm  ← عرض درجات فقط
+#   lecture_10c_average.asm  ← حساب المتوسط فقط
+#
+# كل سطر له شرح بالعربي 👇
+# ============================================================
 
 .data
-    grades: .space 200            # مصفوفة 50 درجة  (50 × 4 بايت)
+    grades: .space 200            # مصفوفة 50 درجة (50 × 4 بايت)
     n:      .word 0               # عدد الطلاب
     sum:    .word 0               # مجموع الدرجات
 
@@ -30,30 +37,32 @@
 main:
 
     # ========================================
-    # القائمة (Menu) — اختر من 1 إلى 4
+    # القائمة — اختر من 1 إلى 4
     # ========================================
 menu:
     la $a0, menu                 # اطبع القائمة
     li $v0, 4
     syscall
+
     li $v0, 5                    # اقرأ choice
     syscall
     move $t0, $v0                # $t0 = choice
 
-    beq $t0, 1, option1          # إذا choice == 1 → إدخال درجات
-    beq $t0, 2, option2          # إذا choice == 2 → عرض درجات
-    beq $t0, 3, option3          # إذا choice == 3 → المتوسط
-    beq $t0, 4, exit             # إذا choice == 4 → خروج
-    la $a0, inv                  # وإلا → "Invalid!"
+    beq $t0, 1, option1          # if choice == 1 → إدخال
+    beq $t0, 2, option2          # if choice == 2 → عرض
+    beq $t0, 3, option3          # if choice == 3 → متوسط
+    beq $t0, 4, exit             # if choice == 4 → خروج
+
+    la $a0, inv                  # غير صحيح → "Invalid!"
     li $v0, 4
     syscall
-    b menu                       # ارجع إلى القائمة
+    b menu
 
     # ========================================
-    # Option 1: Enter grades — إدخال الدرجات
+    # Option 1: إدخال الدرجات
     # ========================================
 option1:
-    la $a0, msg_n                # اسأل عن عدد الطلاب
+    la $a0, msg_n
     li $v0, 4
     syscall
     li $v0, 5
@@ -62,34 +71,34 @@ option1:
 
     sw $zero, sum                # sum = 0
 
-    la $s0, grades               # $s0 = عنوان المصفوفة
-    lw $s1, n                    # $s1 = n
-    li $t0, 0                    # $t0 = i
+    la $s0, grades
+    lw $s1, n
+    li $t0, 0                    # i = 0
 
 input:
-    bge $t0, $s1, done_input     # إذا i >= n → خلصنا
+    bge $t0, $s1, done_input     # if i >= n → خلصنا
 
-    la $a0, msg_g                # اطبع "Grade: "
+    la $a0, msg_g
     li $v0, 4
     syscall
-    li $v0, 5                    # اقرأ درجة
-    syscall
+    li $v0, 5
+    syscall                      # $v0 = الدرجة
 
-    sll $t1, $t0, 2              # $t1 = i × 4
-    add $t1, $s0, $t1            # $t1 = عنوان grades[i]
-    sw $v0, 0($t1)               # grades[i] = v0
+    sll $t1, $t0, 2
+    add $t1, $s0, $t1
+    sw $v0, 0($t1)               # grades[i] = درجة
 
-    lw $t2, sum                  # sum += v0
+    lw $t2, sum
     add $t2, $t2, $v0
-    sw $t2, sum
+    sw $t2, sum                  # sum += درجة
 
-    addi $t0, $t0, 1             # i++
+    addi $t0, $t0, 1
     b input
 done_input:
     b menu
 
     # ========================================
-    # Option 2: Display grades — عرض الدرجات
+    # Option 2: عرض الدرجات
     # ========================================
 option2:
     la $a0, msg_d
@@ -98,26 +107,26 @@ option2:
 
     la $s0, grades
     lw $s1, n
-    li $t0, 0                    # $t0 = i
+    li $t0, 0
 
 disp:
     bge $t0, $s1, done_disp
 
-    la $a0, msg_s                # اطبع "Student "
+    la $a0, msg_s
     li $v0, 4
     syscall
-    addi $a0, $t0, 1             # اطبع رقم الطالب (i+1)
+    addi $a0, $t0, 1
     li $v0, 1
     syscall
-    la $a0, msg_c                # اطبع ": "
+    la $a0, msg_c
     li $v0, 4
     syscall
 
-    sll $t1, $t0, 2              # grades[i]
+    sll $t1, $t0, 2
     add $t1, $s0, $t1
     lw $a0, 0($t1)
     li $v0, 1
-    syscall                      # اطبع الدرجة
+    syscall
 
     la $a0, newline
     li $v0, 4
@@ -129,8 +138,7 @@ done_disp:
     b menu
 
     # ========================================
-    # Option 3: Average — حساب المتوسط
-    # المتوسط = sum / n (قسمة صحيحة)
+    # Option 3: حساب المتوسط
     # ========================================
 option3:
     la $a0, msg_a
@@ -150,7 +158,7 @@ option3:
     b menu
 
     # ========================================
-    # Option 4: Exit — خروج
+    # Option 4: خروج
     # ========================================
 exit:
     la $a0, msg_e

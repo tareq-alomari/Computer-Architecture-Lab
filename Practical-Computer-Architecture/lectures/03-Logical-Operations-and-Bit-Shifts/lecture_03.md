@@ -2,6 +2,15 @@
 
 ---
 
+## برامج منفصلة لكل مفهوم
+
+| البرنامج | الملف | المفهوم |
+|----------|-------|---------|
+| عمليات منطقية | `lecture_03a_logic.asm` | `andi`, `ori`, `xori` |
+| إزاحة بتات | `lecture_03b_shift.asm` | `sll`, `srl` |
+
+---
+
 ## شرح كل أمر
 
 ### `li $t0, 0x12345678`
@@ -148,3 +157,25 @@ main:
 | `sll $t, $s, n` | `$t = $s << n` (إزاحة يسار ×2ⁿ) | `t = s << n` |
 | `srl $t, $s, n` | `$t = $s >> n` (إزاحة يمين ÷2ⁿ) | `t = s >> n` |
 | `syscall 34` | اطبع hex | `cout << hex << x` |
+
+---
+
+## مخطط سير الخوارزمية (Flowchart)
+
+```mermaid
+flowchart TD
+    A[Start] --> B[a = 0x12345678]
+    B --> C[t1 = a AND 0xFF]
+    C --> D[Print a AND 0xFF]
+    D --> E[t2 = a OR 0xFF]
+    E --> F[Print a OR 0xFF]
+    F --> G[t3 = a XOR 0xFF]
+    G --> H[Print a XOR 0xFF]
+    H --> I[t4 = a << 8]
+    I --> J[Print a << 8]
+    J --> K[t5 = a >> 8]
+    K --> L[Print a >> 8]
+    L --> M[End]
+```
+
+![Flowchart](./lecture_03_cpp_flowchart.png)
