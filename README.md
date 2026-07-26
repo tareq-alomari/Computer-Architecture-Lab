@@ -44,7 +44,7 @@
     اقرأ دليل التثبيت أولاً، ثم حل ورقة العمل
   </span>
   <br>
-  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf" style="
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf" style="
     display: inline-block;
     background: #FFFFFF;
     color: #0C4A2D;
@@ -59,7 +59,7 @@
   ">
     اقرأ دليل MARS
   </a>
-  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/CA-Tools.rar" style="
     display: inline-block;
     background: #C79100;
     color: #FFFFFF;
@@ -75,7 +75,7 @@
     تحميل حزمة البيئة
   </a>
   <br><br>
-  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar" style="color: #C79100; font-size: 14px; text-decoration: underline; text-underline-offset: 3px;">
+  <a href="https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/CA-Tools.rar" style="color: #C79100; font-size: 14px; text-decoration: underline; text-underline-offset: 3px;">
     ⚡ حمل <strong>CA-Tools.rar</strong> واتبع التعليمات
   </a>
 </div>
@@ -157,9 +157,9 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 
 1. اقرأ **خطة المحاضرة** أولاً لتعرف الأهداف
 2. ادرس **تحليل المحاضرة** للمحتوى النظري
-3. حمّل **[CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** (يحتوي على MARS + Java JRE + Logisim) وجرّب الأكواد بنفسك
+3. حمّل **[CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/CA-Tools.rar)** (يحتوي على MARS + Java JRE + Logisim) وجرّب الأكواد بنفسك
 4. حل **ورقة العمل** لتثبيت المعلومات
-5. استخدم **دليل MIPS الشامل** كمرجع سريع
+5. استخدم **دليل MIPS الشامل** (ملف `MIPS-Reference.md`) كمرجع سريع
 
 </div>
 
@@ -197,37 +197,42 @@ git clone https://github.com/tareq-alomari/Computer-Architecture-Lab.git
 ```
 Computer-Architecture-Lab/
 │
-├── الشعار/                                  # شعار جامعة إب
+├── الشعار/                                    # شعار جامعة إب
 │   └── images.jpeg
 │
-├── توصيف مقرر معمارية الحاسوب - عملي.docx   # توصيف المقرر المعتمد
+├── توصيف مقرر معمارية الحاسوب - عملي.docx     # توصيف المقرر المعتمد
 │
-└── محاضرات معمارية الحاسوب - عملي/           # المحتوى التعليمي
+└── Practical-Computer-Architecture/           # المحتوى التعليمي (بالإنجليزية)
     │
-    ├── المحاضرات/                           # 10 محاضرات دراسية
-    │   ├── 01-مقدمة-إلى-MARS-وMIPS/
-    │   │   ├── خطة المحاضرة 1.md          # خطة تدريسية مفصلة
-    │   │   ├── تحليل المحاضرة 1.md        # تحليل المحتوى التعليمي
-    │   │   ├── ورقة عمل المحاضرة 1.md     # تمارين وأنشطة
-    │   │   ├── lecture_01.asm             # أمثلة عملية MIPS
-    │   │   └── mips001.asm                # مثال تفاعلي من دليل MARS
+    ├── lectures/                              # 10 محاضرات دراسية
+    │   ├── 00-Computer-Basics.md            # أساسيات الحاسوب (Binary, Hex, CPU)
+    │   ├── MIPS-Reference.md                # دليل MIPS الشامل — شرح كل رمز
+    │   ├── 01-Introduction-to-MARS-and-MIPS/
+    │   │   ├── lecture-plan-01.md           # خطة تدريسية مفصلة
+    │   │   ├── lecture-analysis-01.md       # تحليل المحتوى التعليمي
+    │   │   ├── worksheet-01.md              # تمارين وأنشطة
+    │   │   ├── lecture_01.asm / lecture_01.md / lecture_01.cpp
+    │   │   ├── mips001.asm / mips001.md / mips001.cpp
     │   │
-    │   ├── 02-العمليات-الحسابية-الأساسية/
-    │   ├── 03-العمليات-المنطقية-وإزاحة-البتات/
-    │   ├── 04-الجمل-الشرطية/
-    │   ├── 05-حلقات-التكرار/
-    │   ├── 06-التعامل-مع-الذاكرة/
-    │   ├── 07-المصفوفات/
-    │   ├── 08-السلاسل-النصية/
-    │   ├── 09-الدوال-والمكدس/
-    │   └── 10-مناقشة-وتقييم-المشروع-النهائي/
+    │   ├── 02-Basic-Arithmetic/
+    │   ├── 03-Logical-Operations-and-Bit-Shifts/
+    │   ├── 04-Conditional-Statements/
+    │   ├── 05-Loops/
+    │   ├── 06-Memory-Access/
+    │   ├── 07-Arrays/
+    │   ├── 08-Strings/
+    │   ├── 09-Functions-and-Stack/
+    │   └── 10-Final-Project/
     │
-    └── أدوات/                               # أدوات مساعدة
-        ├── convert_to_pdf.py                # سكربت تحويل MD → PDF
-        ├── style.css                        # هوية جامعة إب البصرية
-        ├── CA-Tools.rar                     # حزمة البيئة (MARS + Java JRE + Logisim)
-        ├── شرح العمل على برنامج mars.pdf   # دليل MARS المصور
-        └── دليل MIPS الشامل - شرح كل رمز.md    # شرح جميع أوامر MIPS
+    ├── tools/                                 # أدوات مساعدة
+    │   ├── CA-Tools.rar                     # حزمة البيئة (MARS + Java JRE + Logisim)
+    │   ├── convert_to_pdf.py                # سكربت تحويل MD → PDF
+    │   ├── style.css                        # هوية جامعة إب البصرية
+    │   ├── شرح العمل على برنامج mars.pdf    # دليل MARS المصور
+    │   └── دليل MIPS الشامل - شرح كل رمز.md # مرجع MIPS (النسخة العربية القديمة)
+    │
+    └── images/                               # صور توضيحية
+        └── *.png
 ```
 
 ### مكونات كل محاضرة
@@ -238,8 +243,9 @@ Computer-Architecture-Lab/
 | **التحليل** | تحليل المحتوى والجمهور المستهدف | `.md` |
 | **ورقة عمل** | أسئلة نظرية، تمارين عملية، تحديات | `.md` |
 | **كود MIPS** | أمثلة عملية قابلة للتشغيل | `.asm` |
-| **الحزمة** | حزمة البيئة (MARS + Java JRE + Logisim) | [CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar) |
-| **دليل MARS** | دليل مصور لشرح العمل على MARS | [PDF](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf) |
+| **مقابل C++** | نفس الأمثلة بلغة C++ للمقارنة | `.cpp` |
+| **الحزمة** | حزمة البيئة (MARS + Java JRE + Logisim) | [CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/CA-Tools.rar) |
+| **دليل MARS** | دليل مصور لشرح العمل على MARS | [PDF](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/%D8%B4%D8%B1%D8%AD%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D8%B9%D9%84%D9%89%20%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC%20mars.pdf) |
 
 ---
 
@@ -257,7 +263,7 @@ Computer-Architecture-Lab/
 
 ### تحميل حزمة البيئة المتكاملة (يحتوي على كل ما تحتاجه)
 
-**[تحميل CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/%D9%85%D8%AD%D8%A7%D8%B6%D8%B1%D8%A7%D8%AA%20%D9%85%D8%B9%D9%85%D8%A7%D8%B1%D9%8A%D8%A9%20%D8%A7%D9%84%D8%AD%D8%A7%D8%B3%D9%88%D8%A8%20-%20%D8%B9%D9%85%D9%84%D9%8A/%D8%A3%D8%AF%D9%88%D8%A7%D8%AA/CA-Tools.rar)** ← يحتوي على MARS (`Mars4_3.jar`) + Java JRE + Logisim
+**[تحميل CA-Tools.rar](https://github.com/tareq-alomari/Computer-Architecture-Lab/blob/main/Practical-Computer-Architecture/tools/CA-Tools.rar)** ← يحتوي على MARS (`Mars4_3.jar`) + Java JRE + Logisim
 
 ---
 
